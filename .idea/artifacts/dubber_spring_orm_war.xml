@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dubber-spring-orm:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dubber-spring-orm.war">
+      <element id="artifact" artifact-name="dubber-spring-orm:war exploded" />
+    </root>
+  </artifact>
+</component>
