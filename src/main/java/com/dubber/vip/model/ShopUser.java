@@ -2,25 +2,28 @@ package com.dubber.vip.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
- * Created by dubber on 2018/5/10.
+ *
+ * @author dubber
+ * @date 2018/5/10
  */
 
 @Entity
 @Table(name = "shop_user")
-public class ShopUser {
-    private long userid;
+public class ShopUser implements Serializable {
+    private Long userid;
     private String username;
     private String PASSWORD;
-    private int usertype;
-    private long createtime;
+    private Integer usertype;
+    private Long createtime;
 
-    public long getUserid() {
+    public Long getUserid() {
         return userid;
     }
 
-    public void setUserid(long userid) {
+    public void setUserid(Long userid) {
         this.userid = userid;
     }
 
@@ -40,19 +43,19 @@ public class ShopUser {
         this.PASSWORD = PASSWORD;
     }
 
-    public int getUsertype() {
+    public Integer getUsertype() {
         return usertype;
     }
 
-    public void setUsertype(int usertype) {
+    public void setUsertype(Integer usertype) {
         this.usertype = usertype;
     }
 
-    public long getCreatetime() {
+    public Long getCreatetime() {
         return createtime;
     }
 
-    public void setCreatetime(long createtime) {
+    public void setCreatetime(Long createtime) {
         this.createtime = createtime;
     }
 
